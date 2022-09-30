@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Bejegyzes bejegyzes= new Bejegyzes("Boros Ádám","Elmentem egy állatkertbe" );
-        Bejegyzes bejegyzes1=new Bejegyzes("Atek Lídia", "Alapjában véve az euklid nem számít veszélyesnek...");
+        Bejegyzes bejegyzes= new Bejegyzes("Boros Ádám","Elmentem egy állatkertbe és kiderült hogy a porcsin nem állat :(( " );
+        Bejegyzes bejegyzes1=new Bejegyzes("Atek Lídia", "Alapjában véve az euklid nem számít veszélyesnek de attól függetlenül elzárva kell tartani (SCP document)...");
 
 
         ArrayList<Bejegyzes> Lista = new ArrayList<Bejegyzes>();
