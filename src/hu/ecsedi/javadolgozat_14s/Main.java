@@ -8,18 +8,24 @@ public class Main {
 
         Bejegyzes bejegyzes= new Bejegyzes("Boros Ádám","Elmentem egy állatkertbe" );
         Bejegyzes bejegyzes1=new Bejegyzes("Atek Lídia", "Alapjában véve az euklid nem számít veszélyesnek...");
-        Bejegyzes bejegyzes2=new Bejegyzes("Máté Benedek", "Robbanás veszély Zedországban!");
+
 
         ArrayList<Bejegyzes> Lista = new ArrayList<Bejegyzes>();
         Lista.add(bejegyzes);
         Lista.add(bejegyzes1);
-        Lista.add(bejegyzes2);
+
 
         System.out.printf("Adja meg mennyi bejegyzést szeretne látni: ");
 
         Scanner sc=new Scanner(System.in);
 
         int mennyiseg= sc.nextInt();
+
+        if (mennyiseg<0){
+
+            throw new NumberFormatException("Nem természetes számot adott meg");
+
+        }
 
         for (int i=0; i<mennyiseg; i++){
 
